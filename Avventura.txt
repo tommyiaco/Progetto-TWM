@@ -1,0 +1,233 @@
+28
+1
+3
+Finalmente le specifiche del progetto per il prossimo appello sono online.
+Se pensi che sia il caso di metterti al lavoro vai al 5.
+Se, invece, secondo te c'e' ancora tempo e poi c'e' il sole e conviene andare al mare, segna una M e vai al 2.
+2
+5
+2
+2
+4
+Ormai hai un'abbronzatura degna delle migliori soap opera.
+Mancano 2 settimane all'appello.
+Forse e' il caso di mettersi al lavoro? Se si', vai al 5.
+Se invece noti che la tua abbronzatura non e' proprio perfetta vai al 3.
+2
+5
+3
+3
+3
+Manca una sola settimana all'appello. In compenso la tua abbronzatura e' perfetta.
+Se, a malincuore, decidi di metterti al lavoro vai al 9.
+Se preferisci riposarti ancora un poco in riva alla spiaggia vai al 4.
+2
+9
+4
+4
+4
+Ormai non c'e' piu' tempo per l'appello, ma a te che te ne importa?
+Mamma e papa', quei fessi, continuano a pagarti le tasse universitarie. Tu nemmeno volevi andarci all'universita'!
+Sara' per il prossimo appello...
+Vai al 1.
+1
+1
+5
+4
+Nelle modalita' d'esame sta scritto chiaramente che il progetto deve essere realizzato in gruppi di 3 persone.
+Che culo! Sei d'accordo proprio con altri 2! Vai al 13.
+Se siete in meno di 3 vai al 7.
+Se siete piu' di 3 vai al 8.
+3
+13
+7
+8
+6
+3
+Cerchi disperatamente, ma non riesci ad arrivare a 3. Decidi di lasciar perdere con le ricerche e di metterti a lavorare.
+Se siete in 2 segnati 2, se sei da solo segnati 1.
+Vai al 11.
+1
+11
+7
+4
+Non siete abbastanza.
+Se decidi di cercare qualcuno vai al 6.
+Se decidi di andare avanti in 2, segnati 2 e vai al 11.
+Se decidi di andare avanti da solo, segnati 1 e vai al 11.
+2
+6
+11
+8
+7
+Discutete se e come dividervi. 
+Se hai segnato M, sei l'ultimo arrivato e i tuoi colleghi decidono democraticamente di lasciarti al tuo destino.
+Ti ritrovi solo come un cane e vai al 9.
+Se non hai segnato M, partecipi alla discussione.
+Se decidete di rispettare le specifiche e vi dividete, ma non siete abbastanza vai al 7.
+Se vi dividete e siete in 3 vai al 13.
+Se ve ne fregate, segna una D e vai al 13 lo stesso. Farete il progetto in un mega gruppone e poi alla fine, cambiando qualcosina, ne presenterete 2 diversi (geniale, vero?!)
+3
+9
+7
+13
+9
+3
+Ormai non c'e' piu' tempo per trovare qualcun altro che non sia gia' in un gruppo.
+Se decidi di fare da solo, segna 1 e vai al 11.
+Se decidi di cercare qualche altro gruppo a cui manca un componente e aggregarti a loro, vai al 10.
+2
+11
+10
+10
+3
+Cerchi disperatamente e alla fine trovi altri due a cui fai pena e ti permettono di aggregarti.
+Se decidi di rimboccarti le maniche e fare la tua parte vai al 13.
+Se invece preferisci non fare un cavolo e aspettare che gli altri (fessi) facciano tutto, segna una P e vai al 20.
+2
+13
+20
+11
+3
+Nelle modalita' d'esame e' scritto che il progetto va fatto in tre a meno di accordi con il docente possibili solo in caso di reale e comprovata necessita'.
+Chiedi l'autorizzazione al docente e vai al 12.
+Ma che autorizzazione d'egitto! La tua e' sicuramente una comprovata necessita'! Vai al 13.
+2
+12
+13
+12
+2
+Dopo una serie di email, riesci a convincere i docenti e questi ti danno l'ok per fare il progetto anche se il gruppo non e' composto da 3 persone.
+Segna una A e vai al 13.
+1
+13
+13
+4
+E' il momento di dividere i compiti all'interno del gruppo.
+Sai gia' programmare e farai tutto tu. Vai al 14.
+Se invece ti prendi la tua parte vai al 15.
+Se, infine, non sai programmare e, francamente, non te ne frega niente di imparare perche' Java non serve a un cavolo, segna una P e vai al 20.
+3
+14
+15
+20
+14
+3
+Sai gia' programmare e il progetto non ti sembra difficile da realizzare. 
+Vai al 15 e segna una I.
+Se, per scrupolo, decidi di provare a fare prima le esercitazioni e poi, magari, anche di studiare qualcosina, non segnare la I, ma vai al 15 lo stesso.
+1
+15
+15
+4
+Ad un certo punto ti imbatti in un problema che non riesci a risolvere.
+Se decidi di consultare la documentazione delle API vai al 18.
+Se preferisci andare a ricevimento e chiedere al prof vai al 16.
+Se, invece, ti sembra meglio chiedere a qualcuno in un altro gruppo, per sapere come ha fatto, vai al 19.
+3
+18
+16
+19
+16
+5
+Bla, bla, pare non finire piu'! Il prof parla e riparla. Chissa' cosa vuole? Tu volevi semplicemente la soluzione al tuo problema.
+Quello invece pare che faccia lezione...
+Decidi di consulatare la documentazione delle API e vai al 18.
+Preferisci chiedere a qualcuno in un altro gruppo. Vai al 19.
+Rifletti su quello che il prof ha blaterato e vai al 17.
+3
+18
+19
+17
+17
+3
+Cerchi di capire quello che ti e' stato detto a ricevimento. Dopo un po' ti accorgi che, in fondo, qualcosa di sensato c'era.
+E il tuo problema non e' poi cosi' difficile! Ora hai capito come risolverlo.
+Vai al 20.
+1
+20
+18
+3
+Con pochi click raggiungi una pagina con qualcosa che dovrebbe fare al caso tuo.
+Se non ti preoccupi di capire bene, tanto basta che funzioni, segna una I.
+Vai al 20.
+1
+20
+19
+3
+Un tuo amico in un altro gruppo ti da la soluzione al tuo problema.
+Se non ti preoccupi di capire, tanto l'importante e' che funzioni, segna una C e vai al 20.
+Se invece ti interessa capire, stressi il tuo amico fino a quando non ti spiega per bene la cosa. Vai al 20.
+1
+20
+20
+7
+E' ora di consegnare il progetto.
+Se hai segnato una P vai al 21.
+Se non hai ne' una P, ne' una A, ma un 1 o un 2, vai al 24.
+Se hai una D vai al 28.
+Se hai una C vai al 27.
+Se hai una I vai al 25.
+Se nessuna delle opzioni sopra ti vanno bene, vai al 26.
+6
+21
+24
+28
+27
+25
+26
+21
+2
+Se hai segnato un 1 vai al 22
+Altrimenti vai al 23
+2
+22
+23
+22
+6
+Sei da solo e non hai fatto un cavolo. Il progetto te lo sei fatto fare da qualcun altro.
+All'orale fai una figura penosa. 
+Non sapendo nulla di Java e di programmazione non ti rendi conto che le tue spiegazioni su come funziona il programma, che dici di aver fatto, non sono credibili.
+Vieni bocciato e dovrai rifare anche lo scritto.
+Speriamo solo che, almeno, tu abbia dovuto pagare profumatamente quello che ti ha scritto il progetto.
+Java, sicuramente, non l'hai imparato. Magari l'onesta' inizi a intuire cosa sia...
+0
+23
+3
+Hai voluto sfruttare per bene i tuoi compagni. Complimenti, farai molta strada come parassita. Magari in politica.
+Intanto pero' ti becchi una bocciatura.
+Java, sicuramente, non l'hai imparato. Magari l'onesta' inizi a intuire cosa sia...
+0
+24
+2
+Non sei in un gruppo di 3 persone e non avevi avvertito i prof. Potevi chiedere l'autorizzazione! 
+Il progetto non ti viene accettato. Magari, la prossima volta, rispetterai di piu' le specifiche che ti vengono date...
+0
+25
+5
+Il tuo progetto prende un buon voto, ma non ottimo. 
+Peccato che il tuo stile di programmazione denunci fin troppo chiaramente che tu di Object Oriented ne sai veramente poco. 
+Avessi studiato almeno un poco... 
+Non ti fossi accontentato della prima soluzione che trovavi...
+Vabbe', chi se ne importa, l'importate e' passare l'esame, e poi tanto, in questo caso non c'era nulla da imparare. O no?
+0
+26
+2
+Il lavoro e' fatto bene. Non sara' il massimo dei progetti, ma l'hai fatto tu e sai rispondere alle domande che i prof ti fanno.
+Complimenti, hai passato l'esame con il voto che meritavi!
+0
+27
+4
+I prof hanno scoperto che un pezzo del tuo programma e' stranamente simile a quello di un altro gruppo e iniziano a tartassarti di domande.
+L'orale diventa un calvario e tu ti arrampichi sugli specchi per cercare di non ammettere che quel pezzo te lo sei fatto passare.
+Peccato, poteva anche andare bene, se solo ti fossi fatto spiegare quel pezzo di programma!
+Ti tocchera' rifare il progetto. Pensavi di fare meno fatica e invece alla fine... i casi della vita! 
+0
+28
+5
+Eravate in piu' di 3 e non vi siete divisi. Avete fatto un unico progetto che poi, solo alla fine avete tentato di trasformare in 2 cambiando qualcosa qua e la'.
+Purtoppo e' andata male. I prof c'hanno perso sopra un sacco di tempo e si sono pure incavolati non poco nel trovare che due progetti sono in sostanza identici.
+Venite chiamati tutti quanti insieme e vi viene chiesto chi a copiato da chi. Chiaramente nessuno di voi fa l'infame e cosi' tutti quanti ve ne tornate a casa.
+Dovrete rifare il progetto e anche lo scritto.
+Chissa' se la parola onesta' ora vi dice qualcosa...
+0
