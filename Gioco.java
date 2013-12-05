@@ -9,25 +9,31 @@ class Gioco {
 		    BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             boolean endOfFile = false;
-            int numeroTappe;
-            String riga;
+            int numeroTappe, numeroTappa, numeroRighe;
+            int[] tappeRaggiungibili;
+            String riga = "";
 
             numeroTappe = Integer.parseInt(bufferedReader.readLine());
             tappe = new Tappa[numeroTappe];
 
             for(int i = 0; i < tappe.length; i++) {
-            	
-            }
-            while (!endOfFile) {
-                String riga = bufferedReader.readLine();
-                if (riga == null)
-                    endOfFile = true;
-                else {
-                	if()
+            	numeroTappa = Integer.parseInt(bufferedReader.readLine());
+
+                numeroRighe = Integer.parseInt(bufferedReader.readLine());
+                for(int j = 0; j < numeroRighe; j++) {
+                    riga += bufferedReader.readLine();
                 }
-		
-                fileReader.close();
+
+                numeroRighe = Integer.parseInt(bufferedReader.readLine());
+                tappeRaggiungibili = new int[numeroRighe];
+                for(int j = 0; j < tappeRaggiungibili.length; j++) {
+                    tappeRaggiungibili[j] = Integer.parseInt(bufferedReader.readLine());
+                }
+
+                
             }
+            
+            fileReader.close();
         } catch (IOException e) {
             System.out.println("Errore in lettura del file");
         }

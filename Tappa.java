@@ -1,17 +1,13 @@
 class Tappa {
 	private String testo;
-	int[] tappeRaggiungibili;
+	private int numeroTappa;
+	private int[] tappeRaggiungibili;
 
-	public Tappa(String testo, int[] tappeRaggiungibili) {
+	public Tappa(String testo, int numeroTappa, int[] tappeRaggiungibili) {
 		this.testo = testo;
+		this.numeroTappa = numeroTappa;
 		this.tappeRaggiungibili = tappeRaggiungibili;
 	}
-
-	public Tappa() {
-		this()
-	}
-
-	public void setTesto(String )
 
 	public String toString() {
 		return (testo + "\n" + tappeRaggiungibili);
