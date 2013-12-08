@@ -1,27 +1,26 @@
 import java.io.*;
 
 class Gioco {
+    public static Tappa[] tappe;
 	public static void main(String[] args) throws Exception{
-		Tappa[] tappe;
-
+        //System.out.println("Inserisci il nome del file da leggere:");
 		try {
-        	FileReader fileReader = new FileReader("Avventura.txt");
+        	FileReader fileReader = new FileReader("Avventura.txt"/*Leggi.unoString()*/);
 		    BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-            boolean endOfFile = false;
-            int numeroTappe, numeroTappa, numeroRighe;
+            int totaleTappe, numeroTappa, numeroRighe;
             int[] tappeRaggiungibili;
             String riga = "";
 
-            numeroTappe = Integer.parseInt(bufferedReader.readLine());
-            tappe = new Tappa[numeroTappe];
+            totaleTappe = Integer.parseInt(bufferedReader.readLine());
+            tappe = new Tappa[totaleTappe];
 
             for(int i = 0; i < tappe.length; i++) {
             	numeroTappa = Integer.parseInt(bufferedReader.readLine());
 
                 numeroRighe = Integer.parseInt(bufferedReader.readLine());
                 for(int j = 0; j < numeroRighe; j++) {
-                    riga += bufferedReader.readLine();
+                    riga += bufferedReader.readLine() + "\n";
                 }
 
                 numeroRighe = Integer.parseInt(bufferedReader.readLine());
@@ -30,12 +29,20 @@ class Gioco {
                     tappeRaggiungibili[j] = Integer.parseInt(bufferedReader.readLine());
                 }
 
-                
+                tappe[i] = new Tappa(numeroTappa, riga, tappeRaggiungibili);
+
+                riga = "";
             }
             
             fileReader.close();
-        } catch (IOException e) {
+
+            for(int i = 0; i < tappe.length; i++) {
+                System.out.println(tappe[i]);
+            }
+            Pannello pannello = new Pannello("Avventura");
+            } catch (IOException e) {
             System.out.println("Errore in lettura del file");
         }
+
 	}
 }
