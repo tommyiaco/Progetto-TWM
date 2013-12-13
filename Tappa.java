@@ -34,6 +34,6 @@ class Tappa {
 	}
 
 	public String toString() {
-		return (numeroTappa + "\n" + testo + "\n" + tappeRaggiungibili.length);
+		return (numeroTappa + "\n" + testo + tappeRaggiungibili.length);
 	}
 }

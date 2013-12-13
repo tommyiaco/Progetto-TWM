@@ -1,8 +1,10 @@
 import java.io.*;
 
 class Gioco {
-    public static Tappa[] tappe;
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
+        //MODIFICATO DA IACO
+        Tappa[] tappe;
+
         //System.out.println("Inserisci il nome del file da leggere:");
 		try {
         	FileReader fileReader = new FileReader("Avventura.txt"/*Leggi.unoString()*/);
@@ -36,10 +38,7 @@ class Gioco {
             
             fileReader.close();
 
-            for(int i = 0; i < tappe.length; i++) {
-                System.out.println(tappe[i]);
-            }
-            Pannello pannello = new Pannello("Avventura");
+            Pannello pannello = new Pannello("Avventura", tappe);
             } catch (IOException e) {
             System.out.println("Errore in lettura del file");
         }

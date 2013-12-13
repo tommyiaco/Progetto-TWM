@@ -1,24 +1,28 @@
 import java.awt.*;
 import java.awt.event.*;
+
 class Pannello extends Frame { 
+	Tappa[] tappe;
 	TextArea testoTappa, segnaTappe;
 	Button[] bottoniTappeRaggiungibili;
 	Panel pannello;
 
-	public Pannello (String titolo) { 
-		super(titolo); 
+	public Pannello (String titolo, Tappa[] tappe) { 
+		super(titolo);
+
+		this.tappe = tappe;
 
 		pannello = new Panel(); 
 		add(pannello, BorderLayout.SOUTH); 
 
-		testoTappa = new TextArea(Gioco.tappe[0].getTesto(),5,20); 
+		testoTappa = new TextArea(tappe[0].getTesto(),5,20); 
 		testoTappa.setEditable(false); 
 		add(testoTappa, BorderLayout.CENTER); 
 
-		segnaTappe = new TextArea("Fai la tua scelta!",5,20); 
+		segnaTappe = new TextArea("Fai la tua scelta!\n - ",5,20); 
 		add(segnaTappe, BorderLayout.EAST);
 
-		mettiPulsanti(Gioco.tappe[0]);
+		mettiPulsanti(tappe[0]);
 
 		setSize(640,360);
 		setVisible(true);
@@ -28,7 +32,7 @@ class Pannello extends Frame {
 
 
 	//Metodo per sovrascrivere l'attuale testo della tappa con quello della tappa selezionata con la variabile numeroTappa.
-	public void cambiaTestoTappa(String testo){
+	public void cambiaTestoTappa(String testo) {
 		testoTappa.setText(testo);
 	}
 
@@ -36,11 +40,11 @@ class Pannello extends Frame {
 	class AscoltatoreBottone implements ActionListener { 
 		public void actionPerformed(ActionEvent evento) { 
 			int prossimaTappa = Integer.parseInt(evento.getActionCommand());
-			cambiaTappa(Gioco.tappe[prossimaTappa - 1]);
+			cambiaTappa(tappe[prossimaTappa - 1]);
 			//"Appende" del testo riguardo la tappa selezionata alla TextArea segnaTappe.
-			segnaTappe.append("\nTappa selezionata: " + prossimaTappa);
+			segnaTappe.append("\nTappa selezionata: " + prossimaTappa + "\n - ");
 			rimuoviBottoni();
-			mettiPulsanti(Gioco.tappe[prossimaTappa - 1]);
+			mettiPulsanti(tappe[prossimaTappa - 1]);
 		} 
 	} 
 
