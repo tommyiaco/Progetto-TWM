@@ -38,6 +38,10 @@ class Gioco {
             
             fileReader.close();
 
+            /*for (int i = 0; i < tappe.length; i++) {
+                System.out.println(tappe[i] + "\n");
+            }*/
+
             Pannello pannello = new Pannello("Avventura", tappe);
             } catch (IOException e) {
             System.out.println("Errore in lettura del file");

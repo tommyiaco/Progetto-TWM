@@ -15,11 +15,11 @@ class Pannello extends Frame {
 		pannello = new Panel(); 
 		add(pannello, BorderLayout.SOUTH); 
 
-		testoTappa = new TextArea(tappe[0].getTesto(),5,20); 
-		testoTappa.setEditable(false); 
+		testoTappa = new TextArea(tappe[0].getTesto(), 5, 20, TextArea.SCROLLBARS_VERTICAL_ONLY); 
+		testoTappa.setEditable(false);
 		add(testoTappa, BorderLayout.CENTER); 
 
-		segnaTappe = new TextArea("Fai la tua scelta!\n - ",5,20); 
+		segnaTappe = new TextArea("Fai la tua scelta!\n - ", 5, 20, TextArea.SCROLLBARS_VERTICAL_ONLY); 
 		add(segnaTappe, BorderLayout.EAST);
 
 		mettiPulsanti(tappe[0]);
@@ -32,8 +32,32 @@ class Pannello extends Frame {
 
 
 	//Metodo per sovrascrivere l'attuale testo della tappa con quello della tappa selezionata con la variabile numeroTappa.
-	public void cambiaTestoTappa(String testo) {
+	private void cambiaTestoTappa(String testo) {
 		testoTappa.setText(testo);
+	}
+
+	//Cambia il testo della tappa
+	private void cambiaTappa(Tappa tappa){
+		cambiaTestoTappa(tappa.getTesto());
+	}
+
+	//Elinare i pulsanti attuali
+	private void rimuoviBottoni(){
+		for (int i = 0; i < bottoniTappeRaggiungibili.length; i++) {
+			pannello.remove(bottoniTappeRaggiungibili[i]);
+		}
+	}
+
+	//Aggiornare i pulsanti
+	private void mettiPulsanti(Tappa tappa){
+		int[] tappeRaggiungibili = tappa.getTappeRaggiungibili();
+		bottoniTappeRaggiungibili = new Button[tappeRaggiungibili.length];
+		for (int i = 0; i < bottoniTappeRaggiungibili.length; i++) {
+			bottoniTappeRaggiungibili[i] = new Button(Integer.toString(tappeRaggiungibili[i]));
+			pannello.add(bottoniTappeRaggiungibili[i]);
+			bottoniTappeRaggiungibili[i].addActionListener(new AscoltatoreBottone());
+		}
+		pannello.validate();
 	}
 
 	//Metodo ascoltatore del bottone che richiama il metodo per effettuare il cambio della tappa.
@@ -47,30 +71,6 @@ class Pannello extends Frame {
 			mettiPulsanti(tappe[prossimaTappa - 1]);
 		} 
 	} 
-
-	//Cambia il testo della tappa
-	public void cambiaTappa(Tappa tappa){
-		cambiaTestoTappa(tappa.getTesto());
-	}
-
-	//Elinare i pulsanti attuali
-	public void rimuoviBottoni(){
-		for (int i = 0; i < bottoniTappeRaggiungibili.length; i++) {
-			pannello.remove(bottoniTappeRaggiungibili[i]);
-		}
-	}
-
-	//Aggiornare i pulsanti
-	public void mettiPulsanti(Tappa tappa){
-		int[] tappeRaggiungibili = tappa.getTappeRaggiungibili();
-		bottoniTappeRaggiungibili = new Button[tappeRaggiungibili.length];
-		for (int i = 0; i < bottoniTappeRaggiungibili.length; i++) {
-			bottoniTappeRaggiungibili[i] = new Button(Integer.toString(tappeRaggiungibili[i]));
-			pannello.add(bottoniTappeRaggiungibili[i]);
-			bottoniTappeRaggiungibili[i].addActionListener(new AscoltatoreBottone());
-		}
-		pannello.validate();
-	}
 
 	public class AscoltatorePannello extends WindowAdapter {
     	public void windowClosing(WindowEvent e) { 
