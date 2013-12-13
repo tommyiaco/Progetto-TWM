@@ -2,7 +2,7 @@ import java.io.*;
 
 class Gioco {
 	public static void main(String[] args) throws Exception {
-        //MODIFICATO DA IACO
+        //MODIFICATO DI NUOVOOOOOOO
         Tappa[] tappe;
 
         //System.out.println("Inserisci il nome del file da leggere:");
